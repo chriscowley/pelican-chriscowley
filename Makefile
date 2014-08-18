@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=ezra.chriscowley.me.uk
 SSH_PORT=22
 SSH_USER=chris
-SSH_TARGET_DIR=/var/www/chriscowley.me.uk/
+SSH_TARGET_DIR=/var/www/test.chriscowley.me.uk/
 
 S3_BUCKET=my_s3_bucket
 

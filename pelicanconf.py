@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Chris Cowley'
 SITENAME = u'Just Another Linux Blog'
 SITEURL = ''
+AUTHOR_EMAIL = "chris@chriscowley.me.uk"
 
 TIMEZONE = 'Europe/Paris'
 
@@ -15,12 +16,15 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 THEME = "/home/chris/Development/pelican-themes/pelican-bootstrap3"
+BOOTSTRAP_THEME = "cosmo"
+PLUGIN_PATH = "/home/chris/Development/pelican-plugins"
+PLUGINS = [ "gravatar" ]
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/')
-         )
+#LINKS =  (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/')
+#         )
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/chriscowleyunix'),

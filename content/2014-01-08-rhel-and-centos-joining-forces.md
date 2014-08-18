@@ -1,11 +1,8 @@
----
-layout: post
-title: "RHEL and CentOS joining forces"
-date: 2014-01-08 14:34
+title: RHEL and CentOS joining forces
 comments: true
 categories: linux
----
-{% img right http://i.imgur.com/3colCNj.png 200 200 %}Yesterday saw probably the biggest FLOSS news in recent times. Certainly the biggest news of 2014 so far :-) By some freak of overloaded RSS readers, I missed the announcement, but I did see this:
+
+![RHEL and CentOS logos](http://i.imgur.com/3colCNj.png){: style="float:right"}Yesterday saw probably the biggest FLOSS news in recent times. Certainly the biggest news of 2014 so far :-) By some freak of overloaded RSS readers, I missed the announcement, but I did see this:
 
 <blockquote class="twitter-tweet" lang="en"><p>Day 1 at the new job. Important stuff first.. Where do I get my Red Hat ?</p>&mdash; Karanbir Singh (@CentOS) <a href="https://twitter.com/CentOS/statuses/420876286785892353">January 8, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
