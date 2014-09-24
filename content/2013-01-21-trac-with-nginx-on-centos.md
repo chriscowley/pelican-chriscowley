@@ -5,7 +5,7 @@ date: 2013-01-21 11:53
 comments: true
 categories: linux
 ---
-[Trac](tac.edgewall.org) is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.
+[Trac](trac.edgewall.org) is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.
 <!-- more -->
 
 What Nginx does do extremely well is Proxy stuff. Use this with Trac's built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac's server is not just for dev (a la WEBrick). It is fine for production use.

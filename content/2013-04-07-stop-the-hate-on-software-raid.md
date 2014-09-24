@@ -1,10 +1,7 @@
----
-layout: post
-title: "Stop the hate on software RAID"
-date: 2013-04-07 20:21
+title: Stop the hate on software RAID
 comments: true
 categories: storage
----
+
 {% img right /images/NetappClustering.jpg %}I've had a another bee in my bonnet recently. Specifically, it has been to do with hardware vs software RAID, but I think it goes deeper than that. It started a couple of months back with a discussion on [Reddit](http://redd.it/18dp63). Some of the comments were:
 
 > Get out, get out now.
