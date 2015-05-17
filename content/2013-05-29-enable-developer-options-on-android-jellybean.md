@@ -1,11 +1,7 @@
----
-layout: post
 title: "Enable Developer Options on Android Jellybean"
 date: 2013-05-29 21:13
 comments: true
-categories: android
----
-{% img right http://www.android.com/images/whatsnew/jb-new-logo.png  %}This was weird! I just updated my venerable ZTE Blade to Cyanogenmod 10.1 (Jellybean). I flashed it, then rebooted having completely forgotten to to install GApps. No problem, reboot into Clockmod Recovery and install them. Promlem: no option to reboot to recovery.
+{% img right https://www.android.com/images/whatsnew/jb-new-logo.png  %}This was weird! I just updated my venerable ZTE Blade to Cyanogenmod 10.1 (Jellybean). I flashed it, then rebooted having completely forgotten to to install GApps. No problem, reboot into Clockmod Recovery and install them. Promlem: no option to reboot to recovery.
 <!-- more -->
 
 It turns out that you need to enable *Advanced reboot* in the *Developer Options. Problem where are those options. In Jellybean 4.2 they are hidden.

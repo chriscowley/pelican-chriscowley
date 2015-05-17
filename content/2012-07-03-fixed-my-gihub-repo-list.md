@@ -1,10 +1,6 @@
----
-layout: post
 title: "Fixed my gihub repo list"
 date: 2012-07-03 20:54
 comments: true
-categories: programming
----
 My Github repo list has not worked as all since I moved over to Octopress. This evening I though I would have a little look into it.
 <!-- more -->
 It turned out that GitHub has <a href="https://github.com/blog/1160-github-api-v2-end-of-life" target="_blank">depreciated the version 1 and 2 APIs</a>. Octopress was using version 2, so I have made a little change.

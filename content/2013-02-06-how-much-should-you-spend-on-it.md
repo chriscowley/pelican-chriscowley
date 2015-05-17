@@ -1,10 +1,6 @@
----
-layout: post
 title: "How much should you spend on IT"
 date: 2013-02-06 16:04
 comments: true
-categories: sysadmin
----
 
 A recent discussion/argument I had on Reddit got me thinking about the cost of solutions we put in.
 

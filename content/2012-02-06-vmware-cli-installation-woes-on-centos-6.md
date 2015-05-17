@@ -1,10 +1,6 @@
----
-layout: post
 title: "VMware CLI installation woes on Centos 6"
 date: 2012-02-06 13:09
 comments: true
-categories: virtualisation
----
 
 
 
@@ -21,12 +17,12 @@ You should now be able to run the installer, but I had another problem though. T
 if ( direct_command("env | grep -i http_proxy") ) {
  $httpproxy = 1;
 } else {
- print wrap("http_proxy not set. please set environment variable 'http_proxy' e.g. export http_proxy=http://myproxy.mydomain.com:0000 . \n\n", 0);
+ print wrap("http_proxy not set. please set environment variable 'http_proxy' e.g. export http_proxy=https://myproxy.mydomain.com:0000 . \n\n", 0);
 }
 if ( direct_command("env | grep -i ftp_proxy") ) {
  $ftpproxy = 1;
 } else {
- print wrap("ftp_proxy not set. please set environment variable 'ftp_proxy' e.g. export ftp_proxy=http://myproxy.mydomain.com:0000 . \n\n", 0);
+ print wrap("ftp_proxy not set. please set environment variable 'ftp_proxy' e.g. export ftp_proxy=https://myproxy.mydomain.com:0000 . \n\n", 0);
 }
 
 if ( !( $ftpproxy && $httpproxy)) {

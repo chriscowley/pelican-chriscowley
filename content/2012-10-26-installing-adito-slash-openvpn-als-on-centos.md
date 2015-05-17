@@ -1,11 +1,7 @@
----
-layout: post
 title: "Installing Adito/OpenVPN-ALS on CentOS"
 date: 2012-10-26 21:19
 comments: true
-categories: centos
----
-[OpenVPN-ALS](http://sourceforge.net/projects/openvpn-als), formerly known as Adito, is not to be confused with [OpenVPN](http://www.openvpn.net). They both brilliant tools that work in completely different things, but in a similar way. Confused? Excellent...
+[OpenVPN-ALS](https://sourceforge.net/projects/openvpn-als), formerly known as Adito, is not to be confused with [OpenVPN](https://www.openvpn.net). They both brilliant tools that work in completely different things, but in a similar way. Confused? Excellent...
 <!-- more -->
 
 OpenVPN-ALS (from now on known as Adito, because I find it less confusing) is a browser based SSL VPN that enables you to acess resources on your own network, even if you are behind a restrictive proxy and/or firewall.
@@ -14,7 +10,7 @@ First you need a basic install of CentOS. The absolute base system is plenty. On
 
 The next step is to install a couple of essentials. OpenVPN-ALS is a java applications, so obviously you need a JRE (in fact you need a JDK), plus it uses Ant for building. The Adito project work purely in branches, to the trunk should be stable. 
 
-First get [Oracle Java](www.oracle.com) and install it. You can use the instructions [here](http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-6-on-fedora-centos-red-hat-rhel/) to help you. You will need to configure `javac` and `jar` as well.
+First get [Oracle Java](www.oracle.com) and install it. You can use the instructions [here](https://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-6-on-fedora-centos-red-hat-rhel/) to help you. You will need to configure `javac` and `jar` as well.
 
 ```
 sudo yum install subversion ant 
@@ -27,7 +23,6 @@ Just to be sure run `sudo update-alternatives -config java` to make sure you are
 There is 3 program that provides 'java'.
 
   Selection    Command
------------------------------------------------
  + 1           /usr/lib/jvm/jre-1.5.0-gcj/bin/java
    2           /usr/lib/jvm/jre-1.6.0-openjdk.x86_64/bin/java
 *  3           /usr/java/jdk1.7.0_07/jre/bin/java
@@ -47,7 +42,7 @@ sudo ant install
 ```
 This will generate a lot of output, but will eventually print something like:
 ```
-     [java] Starting installation wizard........................Point your browser to http://adito.chriscowley.local:28080. 
+     [java] Starting installation wizard........................Point your browser to https://adito.chriscowley.local:28080. 
      [java] 
      [java] Press CTRL+C or use the 'Shutdown' option from the web interface to leave the installation wizard.
 ```
@@ -61,7 +56,7 @@ sudo /etc/init.d/adito start
 sudo chkconfig adito on
 ```
 
-<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/yIVhT/embed"></iframe>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="https://imgur.com/a/yIVhT/embed"></iframe>
 
 You can now log into it, but it will not do much as there are no applications installed. You need to check them out of Subversion, compile and upload them. You can do this on your local machine.
 

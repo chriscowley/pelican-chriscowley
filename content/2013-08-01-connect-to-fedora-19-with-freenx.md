@@ -1,11 +1,7 @@
----
-layout: post
 title: "Connect to Fedora 19 with FreeNX"
 date: 2013-08-01 10:17
 comments: true
-categories: linux
----
-{% img right http://i.imgur.com/Z8LFhPUl.png 400 250 %} FreeNX is a great remote desktop protocol. I find it more responsive than VNC and it uses less bandwidth. The biggest advantage though (in my eyes) is that it uses SSH to do the authentication. With VNC, each user has to arrange another password to connect to their VNC session.
+{% img right https://i.imgur.com/Z8LFhPUl.png 400 250 %} FreeNX is a great remote desktop protocol. I find it more responsive than VNC and it uses less bandwidth. The biggest advantage though (in my eyes) is that it uses SSH to do the authentication. With VNC, each user has to arrange another password to connect to their VNC session.
 <!-- more -->
 
 However, FreeNX is still not really working nicely with GNOME 3. If you use KDE you are fine, but I like GNOME and many of the programs are GTK as a result. This means that they look out of place on KDE, which causes my engineer OCD super-sensory powers to go mad.

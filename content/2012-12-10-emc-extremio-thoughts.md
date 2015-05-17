@@ -1,18 +1,14 @@
----
-layout: post
 title: "EMC ExtremIO Thoughts"
 date: 2012-12-10 16:39
 comments: true
-categories:  storage
----
 There has been quite a bit of musing recently on the web about EMC and what will come out of their ExtremIO acquisition. They have recently (finally) started demonstrating an all-flash array. The name says it all: ExtremIO. It is for super high IOPS applications - Virtual desktops, enormous DBs, that sort of thing.
 <!-- more -->
 
-It is a bit of a depature from traditional EMC, in that it [appears](http://storagenewsletter.com/news/systems/all-ssd-system-from-emc-xtremio-) that it is going to be a true scale-out architecture. This is has more in common with Isilion (not developed at EMC) than VMAX (developed at EMC).
+It is a bit of a depature from traditional EMC, in that it [appears](https://storagenewsletter.com/news/systems/all-ssd-system-from-emc-xtremio-) that it is going to be a true scale-out architecture. This is has more in common with Isilion (not developed at EMC) than VMAX (developed at EMC).
 
-The problem is that EMC are *extremely* late to the market this time around. VMAX was ahead of the curve by adding flash. In the all flash arena there are several options already there, [Violin](http://violin-memory.com), [Whiptail](http://whiptail.com/) spring straight to mind.
+The problem is that EMC are *extremely* late to the market this time around. VMAX was ahead of the curve by adding flash. In the all flash arena there are several options already there, [Violin](https://violin-memory.com), [Whiptail](https://whiptail.com/) spring straight to mind.
 
-Over at [The Storage Architect](http://blog.thestoragearchitect.com/2012/12/10/xtremio-aka-project-x-wheres-the-innovation/) Chris Evans gives the standard counter-arguments to EMC's marketing spin. Namely:
+Over at [The Storage Architect](https://blog.thestoragearchitect.com/2012/12/10/xtremio-aka-project-x-wheres-the-innovation/) Chris Evans gives the standard counter-arguments to EMC's marketing spin. Namely:
 
 1. Other vendor solutions aren't as resilient
 2. It's a 1.0 product, expect more from 2.0 and beyond
@@ -28,8 +24,8 @@ It is not a 1.0 product, I can not accept that EMC acquired ExtremIO based on st
 
 Does it really give the customers choice? I would go one step further than what Chris has said - that an all-flash VMAX or VNX would have made sense. I agree with him, but I also think that they have actually removed choice.
 
-I would say that EMC have cocked-up here. They under-estimated the market for all-flash arrays. Even my [old employer have got some](http://www.violin-memory.com/news/press-releases/nats-selects-violin-memory-flash-storage-for-virtual-desktop-infrastructure/) and that is in Air Traffic control - there is no-one else who relies more on "tried and tested" technology than them. They then rushed to through some money at the problem, but like of Violin were already happy where they were.
+I would say that EMC have cocked-up here. They under-estimated the market for all-flash arrays. Even my [old employer have got some](https://www.violin-memory.com/news/press-releases/nats-selects-violin-memory-flash-storage-for-virtual-desktop-infrastructure/) and that is in Air Traffic control - there is no-one else who relies more on "tried and tested" technology than them. They then rushed to through some money at the problem, but like of Violin were already happy where they were.
 
 {% pullquote %}
-Robin Harris at [StorageMojo](http://storagemojo.com/2012/12/05/emcs-xtreme-embarrassment/) thinks this will be a costly mistake for EMC. I disagree, I think by announcing that this is coming EMC will stall the market and thus come out of this fine. Unfortunately there is too much latency in the enterprise storage space for it to be otherwise. I wish it were a bit more dynamic and {"I wish that EMC would be punished for this"}, thus rewarding one of the underdogs. That does not happen enough in the enterprise space, especially for an Englishman like me (we do love the underdogs).
+Robin Harris at [StorageMojo](https://storagemojo.com/2012/12/05/emcs-xtreme-embarrassment/) thinks this will be a costly mistake for EMC. I disagree, I think by announcing that this is coming EMC will stall the market and thus come out of this fine. Unfortunately there is too much latency in the enterprise storage space for it to be otherwise. I wish it were a bit more dynamic and {"I wish that EMC would be punished for this"}, thus rewarding one of the underdogs. That does not happen enough in the enterprise space, especially for an Englishman like me (we do love the underdogs).
 {% endpullquote %}

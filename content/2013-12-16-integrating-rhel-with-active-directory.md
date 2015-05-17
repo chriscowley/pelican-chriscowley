@@ -1,10 +1,6 @@
----
-layout: post
 title: "Integrating RHEL with Active Directory"
 date: 2013-12-16 09:52
 comments: true
-categories: linux
----
 I had a request on Reddit to share a document I wrote about connect Red Hat Enterprise Linux with Active Directory. The original document I wrote is confidential, but I said I would write it up.
 
 This works for both Server 2008(R2) and 2012. If I recall correctly it will also work with 2003, but may need to minor terminology changes on the Windows side. From the Linux side, it should be fine with RHEL 6 and similar (CentOS and Scientific Linux). It should also apply to Fedora, but your mileage may vary.
@@ -36,7 +32,7 @@ In Server Manager, add the Role Service "Identity Management for UNIX". This is 
 
 Once that is installed, create a pair of groups. For the sake of argument, lets call them _LinuxAdmin_ and _LinuxUser_. The intended roles of these 2 groups is left as an exercise for the reader. When you create these groups, you will see a new tab in the properties window for both groups and users: "UNIX Attributes".
 
-Now go ahead and create a user (or edit an existing one). Go into the UNIX tab and set the configure the user for UNIX access: {% img right http://i.imgur.com/Ox9kuAy.png %}
+Now go ahead and create a user (or edit an existing one). Go into the UNIX tab and set the configure the user for UNIX access: {% img right https://i.imgur.com/Ox9kuAy.png %}
 
 - Select the NIS domain you created earlier
 - Set an approprate UUID (default should be fine)

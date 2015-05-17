@@ -1,11 +1,7 @@
----
-layout: post
 title: "Home-made Redundant Thin-provisioned SAN"
 date: 2012-02-08 20:02
 published: true
 comments: true
-categories: storage
----
 
 The inspiration for this came from a mixture of problems I was having with my HP P2000, ideas that have been floating around my head for a while, plus a post over at Bauer-power.net. Basically I got given a bunch of warranty returned Supermicro servers from our Customer Service guys  and got tasked with making it our secondary VMware store and DR snapshot storage. Incidentally, the Supermicro servers are used for our Channel-in-a-box product for those you in the broadcast world. They are not ideal, the 2U 12 disk models that Pablo uses are far more suitable.
 <!-- more -->
@@ -34,7 +30,7 @@ There are a couple of differences:
  -   I am building on top of CentOS. I started with Red Hat and will continue to use it for server environments in the forceeable future.
  -   I do not have de-duplication as I am not using ZFS, I am running on top of Ext4 and will use XFS or BTRFS if I need to. I am only using 8x 1TB drives as that is what I got given for free.
 
-I have had to build a couple of custom RPMS which I have made available in my <a href="http://yum.chriscowley.me.uk/el/6/x86_64/repoview/" target="blank">Yum repository</a>.
+I have had to build a couple of custom RPMS which I have made available in my <a href="https://yum.chriscowley.me.uk/el/6/x86_64/repoview/" target="blank">Yum repository</a>.
 
 I did investigate de-duplication using LessFS, but sadly that is a no go as it does not currently support Extended Attributes, which are required by GlusterFS.
 
@@ -57,10 +53,10 @@ In the hosts file add:
 
 Add my repository:
 {% codeblock %}
-rpm --import http://yum.chriscowley.me.uk/RPM-GPG-KEY-ChrisCowley
-yum install http://yum.chriscowley.me.uk/el/6/x86_64/RPMS/chriscowley-release-1-1.noarch.rpm
+rpm --import https://yum.chriscowley.me.uk/RPM-GPG-KEY-ChrisCowley
+yum install https://yum.chriscowley.me.uk/el/6/x86_64/RPMS/chriscowley-release-1-1.noarch.rpm
 rpm --import https://fedoraproject.org/static/0608B895.txt
-yum install http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm 
+yum install https://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm 
 {% endcodeblock %}
 
 Now you can install the necessary packages, which is not many. :

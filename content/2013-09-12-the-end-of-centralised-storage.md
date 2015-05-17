@@ -1,17 +1,13 @@
----
-layout: post
 title: "The End of Centralised Storage"
 date: 2013-09-12 20:20
 comments: true
-categories: storage
----
-{% img right /images/NetappClustering.jpg %}That is a pretty drastic title, especially given that I spend a significant part of my day job working with EMC storage arrays. The other day I replied to a tweet by [Scott Lowe](http://blog.scottlowe.org) :
+{% img right /images/NetappClustering.jpg %}That is a pretty drastic title, especially given that I spend a significant part of my day job working with EMC storage arrays. The other day I replied to a tweet by [Scott Lowe](https://blog.scottlowe.org) :
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/scott_lowe">@scott_lowe</a> with things like Gluster and Ceph what does shared storage actually give apart from complications?</p>&mdash; Chris Cowley (@chriscowleyunix) <a href="https://twitter.com/chriscowleyunix/statuses/377900529760083968">September 11, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- more -->
 
-Due to time-zone differences between France and the USA I missed out on most of the heated conversation that ensued. From what I could see it quickly got out of hand, with people replying to so many others that they barely had any space to say anything. I am sure it has spawned a load of blog posts, as Twitter is eminently unsuitable for that sort of conversation (at least I have seen one by [StorageZilla](http://storagezilla.typepad.com/storagezilla/2013/09/tomorrows-das-yesterday.html).
+Due to time-zone differences between France and the USA I missed out on most of the heated conversation that ensued. From what I could see it quickly got out of hand, with people replying to so many others that they barely had any space to say anything. I am sure it has spawned a load of blog posts, as Twitter is eminently unsuitable for that sort of conversation (at least I have seen one by [StorageZilla](https://storagezilla.typepad.com/storagezilla/2013/09/tomorrows-das-yesterday.html).
 
 The boundary between DAS (Direct Attached Storage) and remote storage (be that a SAN or NAS) is blurring. Traditionally a SAN/NAS array is a proprietary box that gives you bits of disk space that is available to whatever server (or servers) that you want. Conversely, DAS is attached either inside the server or to the back of it. Sharing between multiple servers is possible, but not very slick - no switched fabric, no software configuration, cables have to be physically moved.
 

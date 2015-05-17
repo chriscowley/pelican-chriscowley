@@ -12,15 +12,21 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+
 TRANSLATION_FEED_ATOM = None
 THEME = "/home/chris/Development/pelican-themes/pelican-bootstrap3"
-BOOTSTRAP_THEME = "cosmo"
-PLUGIN_PATH = "/home/chris/Development/pelican-plugins"
-PLUGINS = [ 'gravatar', 'liquid_tags.img', 'liquid_tags.video',
-            'liquid_tags.youtube', 'liquid_tags.vimeo',
-            'liquid_tags.include_code' ]
+BOOTSTRAP_THEME = "yeti"
+PLUGIN_PATHS = ["../pelican-plugins"]
+PLUGINS = [ 'summary', 'gravatar', 'liquid_tags.img', 'liquid_tags.video',
+            'pelican_gist', 'liquid_tags.img', 'clean_summary',
+            'md_metayaml', 'bootstrapify'
+ #           'better_figures_and_images'
+          ]
+#            'liquid_tags.youtube', 'liquid_tags.vimeo',
+#            'liquid_tags.include_code', 'better_figures_and_images' ]
 
 # Blogroll
 #LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -32,6 +38,7 @@ PLUGINS = [ 'gravatar', 'liquid_tags.img', 'liquid_tags.video',
 SOCIAL = (('twitter', 'http://twitter.com/chriscowleyunix'),
           ('github', 'http://github.com/chriscowley'),)
 
+RESPONSIVE_IMAGES = True
 DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = [ 'images', 'assets' ]

@@ -1,10 +1,6 @@
----
-layout: post
 title: "SFTP Chroot on CentOS"
 date: 2012-11-19 19:59
 comments: true
-categories: linux
----
 This came up today where I needed to give secure file transfer to customers. To complicate things I had to use an out-of-the-box RHEL6 system. The obvious answer was to use SSH and limit those users to SFTP only. Locking them into a chroot was not a requirement, but it seemed like a good idea to me. I found plenty of docs that got 80% of the way, or took a shortcut, but this should be complete.
 <!-- more -->
 
@@ -69,5 +65,5 @@ You should then be able to put a file in your upload folder. However if you try 
 
 Required reading:
 
-* [CentOS Wiki SELinux](http://wiki.centos.org/HowTos/SELinux)
-* [CentOS Wiki SELinuxBooleans](http://wiki.centos.org/TipsAndTricks/SelinuxBooleans)
+* [CentOS Wiki SELinux](https://wiki.centos.org/HowTos/SELinux)
+* [CentOS Wiki SELinuxBooleans](https://wiki.centos.org/TipsAndTricks/SelinuxBooleans)

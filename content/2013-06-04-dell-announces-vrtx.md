@@ -1,11 +1,7 @@
----
-layout: post
 title: "Dell Announces VRTX"
 date: 2013-06-04 22:15
 comments: true
-categories: systems
----
-{% img right http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG %} Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being "the intersection of multiple lines", alluding to this being a mixture of a rack server, a blade server and a SAN.
+{% img right https://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG %} Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being "the intersection of multiple lines", alluding to this being a mixture of a rack server, a blade server and a SAN.
 <!-- more -->
 
 It is aimed at branch offices, so it contains 4 servers, storage, networking and (unusually) the ability to add PCI-e cards (up to 8, including 3 FH/FL). These cards can be connected to which ever server you want. These features put in competition with the HP C3000 and the Supermicro OfficeBlade.
@@ -16,5 +12,5 @@ So what we have is a system that takes the same amount of space as it competitor
 
 If I could make 1 request of Dell, it would be to do a "VRTX lite" that drops the PCI-e slots and (perhaps) halves the number of disks and servers. To get a pair of computer servers and a small SAN in a 4 bay NAS sized box would be awesome for many a SMB branch office.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/16IlDQnIMrk?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/16IlDQnIMrk?rel=0" frameborder="0" allowfullscreen></iframe>
 

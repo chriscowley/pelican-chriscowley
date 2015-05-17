@@ -1,11 +1,7 @@
----
-layout: post
 title: "Openstack Neutron Performance problems"
 date: 2014-03-31 20:08
 comments: true
-categories: ['linux', 'openstack']
----
-{% img right http://i.imgur.com/fSMzOUE.jpg %}For the last few weeks I have been consulting on a private cloud project for a local company. Unsurprisingly this has been based around the typical Openstack setup.
+{% img right https://i.imgur.com/fSMzOUE.jpg %}For the last few weeks I have been consulting on a private cloud project for a local company. Unsurprisingly this has been based around the typical Openstack setup.
 
  - Nova - KVM
  - Neutron - Openvswitch
@@ -20,7 +16,7 @@ My architecture is nothing out of the ordinary. A pair of hosts each with 2 netw
 
 All this is configured using Red Hat RDO. I had done all this under both Grizzly and, using RDO, it was 30 minutes to set up.
 
-Given how common and simple the setup, imagine my surprise when it did not work. What do I mean did not work? From the outset I was worried about Neutron. While I am fairly up to date with SDN in theory, I am fairly green in practise. Fortunately, while RDO does not automate it's configuration, there is at least an [accurate document](http://openstack.redhat.com/Neutron_with_existing_external_network) in how to configure it.
+Given how common and simple the setup, imagine my surprise when it did not work. What do I mean did not work? From the outset I was worried about Neutron. While I am fairly up to date with SDN in theory, I am fairly green in practise. Fortunately, while RDO does not automate it's configuration, there is at least an [accurate document](https://openstack.redhat.com/Neutron_with_existing_external_network) in how to configure it.
 
 Now, if I was just using small images that would probably be fine, however this project required Windows images. As a result some problems quickly surfaced. Each time I deployed a new Windows image, everything would lock up:
 

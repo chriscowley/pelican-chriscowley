@@ -1,10 +1,6 @@
----
-layout: post
 title: "Music Player Daemon in Fedora"
 date: 2012-03-16 22:04
 comments: true
-categories: media
----
 
 
 This should have nice and simple, but there was a little gotcha (for me anyway).
@@ -13,8 +9,8 @@ First install the RPMFusion repositories:
 <!-- more -->
 ```
 yum localinstall --nogpgcheck \
-    http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm \
-    http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+    https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm \
+    https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
 ```
 
 Now you can install MPD and a simple client with

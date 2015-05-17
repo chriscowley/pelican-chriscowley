@@ -1,10 +1,13 @@
-Title: Ubuntu upgrade problems
+title: "Ubuntu upgrade problems"
+date: 2011-10-16 13:24
 comments: true
-categories: linux
+
+
 
 Usually the release upgrade is relatively trouble-free, but this time I had a minor problem. After the upgrade I had no X Windows. It turned out that the NVidia driver not loading.
 
 I had to boot it up in rescue mode, which is selectable from the Grub menu. From there I could drop to a root console.
+<!-- more -->
 
 The first step is to remount / as read-write and then mount my boot partition (/dev/sda1).
 ```

@@ -1,11 +1,7 @@
----
-layout: post
 title: "VMware CLI on Ubuntu Saucy Salamander"
 date: 2014-04-09 10:51
 comments: true
-categories: ['linux', 'vmware']
----
-{% img right http://www.datanalyzers.com/VMware-Data-Recovery.jpg %}The current project (as of this week) has me moving away from Openstack for a while. For the next couple of months I will be immersing myself in monitor, metrics and logging. Naturally, this being a shiney new environment, this involves a significant amount of VMware time.
+{% img right https://www.datanalyzers.com/VMware-Data-Recovery.jpg %}The current project (as of this week) has me moving away from Openstack for a while. For the next couple of months I will be immersing myself in monitor, metrics and logging. Naturally, this being a shiney new environment, this involves a significant amount of VMware time.
 <!-- more -->
 
 I have inherited an Icinga install running on Ubuntu Server, so I will be needing to run CLI commands to create checks. Simply runnning the installer does not work, as the vmware-cli package is a mixture of 32 and 64 bit commands.

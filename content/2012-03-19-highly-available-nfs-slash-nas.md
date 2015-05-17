@@ -1,18 +1,14 @@
----
-layout: post
 title: "Highly Available NFS/NAS"
 date: 2012-03-19 16:59
 comments: true
-categories: storage
 published: true
----
 Take 2 Centos Servers (nfs1 and nfs2 will do nicely) and install ELrepo and EPEL on them both:
 <!-- more -->
 
 {% codeblock %}
 yum install \
-    http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm \
-    http://elrepo.org/elrepo-release-6-4.el6.elrepo.noarch.rpm --nogpgcheck
+    https://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm \
+    https://elrepo.org/elrepo-release-6-4.el6.elrepo.noarch.rpm --nogpgcheck
 {% endcodeblock %}
 
 Each of them should ideally have 2 NICS, with the secondary ones just used for DRBD sync purposes. We’ll give these the address 10.0.0.1/32 and 10.0.0.2/32.

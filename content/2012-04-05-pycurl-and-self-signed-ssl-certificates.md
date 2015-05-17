@@ -1,12 +1,8 @@
----
-layout: post
 title: "PyCurl and self-signed SSL certificates"
 date: 2012-04-05 16:50
 comments: true
-categories: Programming
----
 
-At <a href="http://www.snellgroup.com" target="_blank">Snell</a> we make heavy use of self-signed certificates for internal websites, such as the R&D wiki. Active Directory makes it easy for us to make this transparent to the users, those that use Firefox/Chrome can find our well-published instructions to add the CA certificate to their own browsers.
+At <a href="https://www.snellgroup.com" target="_blank">Snell</a> we make heavy use of self-signed certificates for internal websites, such as the R&D wiki. Active Directory makes it easy for us to make this transparent to the users, those that use Firefox/Chrome can find our well-published instructions to add the CA certificate to their own browsers.
 <!-- more -->
 
 Today I was writing a script to that pulls lots of attachments off our Confluence wiki, which we access through SSL using one of those certificates. Of course PyCurl  moaned that it could not verify the host, but I did not care – I know it is the right host!

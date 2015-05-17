@@ -1,12 +1,8 @@
----
-layout: post
 title: "Skype video on Fedora 64bit"
 date: 2012-04-18 15:53
 comments: true
-categories: linux
----
 
-Install Skype – I used <a href="http://slayachronicles.blogspot.co.uk/2012/03/installing-skype-on-fedora-16-64-bit.html" target="_blank" >these</a> instructions. This will seem to get everything working, but video will just give you a black screen and no error message. This is because Skype is 32 bit and your webcam driver is 64 bit. Make sure you have libv4l.i686 installed along with a couple of other dependencies:
+Install Skype – I used <a href="https://slayachronicles.blogspot.co.uk/2012/03/installing-skype-on-fedora-16-64-bit.html" target="_blank" >these</a> instructions. This will seem to get everything working, but video will just give you a black screen and no error message. This is because Skype is 32 bit and your webcam driver is 64 bit. Make sure you have libv4l.i686 installed along with a couple of other dependencies:
 <!-- more -->
 
 ```

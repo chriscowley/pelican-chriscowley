@@ -1,11 +1,7 @@
----
-layout: post
 title: "Logstash on CentOS 6"
 date: 2014-03-21 20:57
 comments: true
-categories: monitoring
----
-{% img right http://logstash.net/images/logstash.png 200 %} It's been a while since I last posted anything, but it is time to. I've been playing around a lot with various tools for gathering information about my environment recently. One of the most important tools for storing that information is decent logging. Syslog is proven and solid, but a little creaky. For storing everything it is fine, but getting anything out is not so great.
+{% img right https://logstash.net/images/logstash.png 200 %} It's been a while since I last posted anything, but it is time to. I've been playing around a lot with various tools for gathering information about my environment recently. One of the most important tools for storing that information is decent logging. Syslog is proven and solid, but a little creaky. For storing everything it is fine, but getting anything out is not so great.
 <!-- more -->
 
 Logstash is an awesome tool written by [Jordan Sissel](https://twitter.com/jordansissel) that is used to "collect logs, parse them, and store them for later use (like, for searching)". It has an excellent howto, but I have one problem with it: the use of a tar file rather than packages. This easily worked around though, as Elasticsearch have it in their Yum repository.
@@ -15,16 +11,16 @@ First up, define that repository in the file `/etc/yum.repos.d/logstash.repo`:
 ```
 [logstash-1.4]
 name=logstash repository for 1.4.x packages
-baseurl=http://packages.elasticsearch.org/logstash/1.4/centos
+baseurl=https://packages.elasticsearch.org/logstash/1.4/centos
 gpgcheck=1
-gpgkey=http://packages.elasticsearch.org/GPG-KEY-elasticsearch
+gpgkey=https://packages.elasticsearch.org/GPG-KEY-elasticsearch
 enabled=1
 
 [elasticsearch-1.0]
 name=Elasticsearch repository for 1.0.x packages
-baseurl=http://packages.elasticsearch.org/elasticsearch/1.0/centos
+baseurl=https://packages.elasticsearch.org/elasticsearch/1.0/centos
 gpgcheck=1
-gpgkey=http://packages.elasticsearch.org/GPG-KEY-elasticsearch
+gpgkey=https://packages.elasticsearch.org/GPG-KEY-elasticsearch
 enabled=1
 ```
 
@@ -38,7 +34,7 @@ chkconfig elasticsearch on
 service elasticsearch start
 ```
 
-For the installation that is it. When you reboot the services will start and you are good to go. Before rebooting though it is worth playing around a little. So lets blatantly rip off the [Quickstart](http://logstash.net/docs/1.4.0/tutorials/getting-started-with-logstash). Run:
+For the installation that is it. When you reboot the services will start and you are good to go. Before rebooting though it is worth playing around a little. So lets blatantly rip off the [Quickstart](https://logstash.net/docs/1.4.0/tutorials/getting-started-with-logstash). Run:
 
 ```
 sudo -u logstash /opt/logstash/bin/logstash -e 'input { stdin { } } output { stdout { codec => rubydebug } }'
@@ -65,7 +61,7 @@ sudo -u logstash /opt/logstash/bin/logstash -e 'input { stdin { } } output { ela
 
 Now if you type something in that same console (we're still taking the input from STDIN) the output will be written to Elasticsearch.
 
-To test that run `curl 'http://localhost:9200/_search?pretty'` in another console and you should see something like:
+To test that run `curl 'https://localhost:9200/_search?pretty'` in another console and you should see something like:
 
 ```
 {
@@ -154,4 +150,4 @@ Now you can start Logstash and it will pull in `/var/log/messages`:
 service logstash start
 ```
 
-There are loads of configuration options for Logstash, so have a look in the [main documentation](http://logstash.net/docs/1.4.0/) and the [Cookbook](http://cookbook.logstash.net/) for more.
+There are loads of configuration options for Logstash, so have a look in the [main documentation](https://logstash.net/docs/1.4.0/) and the [Cookbook](https://cookbook.logstash.net/) for more.

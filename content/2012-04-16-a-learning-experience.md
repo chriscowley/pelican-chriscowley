@@ -1,10 +1,6 @@
----
-layout: post
 title: "A Learning Experience"
 date: 2012-04-16 20:30
 comments: true
-categories: System Administration
----
 
 How many times have you installed/updated a bit of software and read the line “Please take a back up” or something to that effect? 99 times out of a hundred, you will just continue and ignore it.
 <!-- more -->

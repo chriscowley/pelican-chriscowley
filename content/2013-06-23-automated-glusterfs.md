@@ -1,11 +1,7 @@
----
-layout: post
 title: "Automated GlusterFS"
 date: 2013-06-23 22:02
 comments: true
-categories: [storage, puppet, devops]
----
-{% img right http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png %} As I promised on Twitter, this is how I automate a GlusterFS deployment. I'm making a few assumptions here: 
+{% img right https://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png %} As I promised on Twitter, this is how I automate a GlusterFS deployment. I'm making a few assumptions here: 
 <!-- more -->
 
 * I am using CentOS 6, so should work on RHEL 6 and Scientific Linux 6 too. Others may work, but YMMV.
@@ -19,7 +15,7 @@ categories: [storage, puppet, devops]
  
 The diagram above shows the basic layout of what to start from in terms of hardware. In terms of software, you just need a basic CentOS 6 install and to have Puppet working.
 
-I use a pair of Puppet modules (both in the Forge): [thias/glusterfs](http://forge.puppetlabs.com/thias/glusterfs) and [puppetlabs/lvm](http://forge.puppetlabs.com/puppetlabs/lvm). The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of "do one job well"  holds up for Puppet modules as well. You will also need my [yumrepos](https://github.com/chriscowley/puppet-yumrepos) module.
+I use a pair of Puppet modules (both in the Forge): [thias/glusterfs](https://forge.puppetlabs.com/thias/glusterfs) and [puppetlabs/lvm](https://forge.puppetlabs.com/puppetlabs/lvm). The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of "do one job well"  holds up for Puppet modules as well. You will also need my [yumrepos](https://github.com/chriscowley/puppet-yumrepos) module.
 
 Clone those 3 modules into your modules directory:
 

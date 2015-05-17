@@ -1,8 +1,11 @@
-title: Some great new SAN gear
-comments: true
-categories: storage
+Some great new SAN gear
+#######################
 
-Just before Christmas I was up at a storage seminar run by a company called <a href="http://www.dothill.com/" target="_blank">Dot Hill</a>. Until I was pointed to them when I spoke to our storage supplier about replacing an aging array I had never heard of them. However, it turns out that they make the hardware used by HP, NetApp and others – quite a pedigree then.
+:title: "Some great new SAN gear"
+:date: 2010-01-12 13:35
+:comments: true
+
+Just before Christmas I was up at a storage seminar run by a company called <a href="https://www.dothill.com/" target="_blank">Dot Hill</a>. Until I was pointed to them when I spoke to our storage supplier about replacing an aging array I had never heard of them. However, it turns out that they make the hardware used by HP, NetApp and others – quite a pedigree then.
 <!-- more -->
 
 All their products are completely modular, based on the same chassis. If you have an iSCSI unit, then you can later change it into a FC one and you do not have to migrate anything as the array config is not stored on the controllers.

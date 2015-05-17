@@ -1,10 +1,6 @@
----
-layout: post
 title: "Installing PostgreSQL on Fedora 17"
 date: 2012-06-23 13:02
 comments: true
-categories: linux
----
 With the new systemd this now requires a couple of manual steps.
 
 Obviously we start by installing the RPMS themselves:

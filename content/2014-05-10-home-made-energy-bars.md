@@ -1,9 +1,7 @@
-layout: post
 title: "Home-made Energy Bars"
+date: 2014-05-10 11:57
 comments: true
-categories: ['cycling']
-
-{% img right http://i.imgur.com/RUF1L6e.jpg 200 %} A break from computing today and into the world of nutrition. Cyclists love to talk about nutrition as the nature of our sport makes it a major consideration. I do not really know of any other sport where your fuel gives out before the rest of your body.
+{%img right https://i.imgur.com/RUF1L6e.jpg 200 %}A break from computing today and into the world of nutrition. Cyclists love to talk about nutrition as the nature of our sport makes it a major consideration. I do not really know of any other sport where your fuel gives out before the rest of your body.
 <!-- more -->
 
 This means that cycling nutrition is big business, and expensive. A typical box of energy bars will cost about 1 euro a bar from a big box pusher, more from your LBS. To that end (as I like baking) I decided to make my own.
@@ -52,11 +50,10 @@ Put in the oven for about 15 minutes. When it is nicely golden, take it out and 
 Of course, this being a geeky blog I had to do some maths and comparisons. Note that this is all calculated from the information on the packets and searching on the internet. I am an engineer, not a nutritionist so do not take this as gospel.
 
  Bar | weight (g) | Energy (kcal) | Protein (g) | Fat (g) 
--- |--------------|-------------|---------
  Mine | ~25-30 | 134          | 1.2         | 6.1
- [SiS Rego](http://www.scienceinsport.com/sis-products/sis-rego-range/sis-rego-protein/sis-rego-protein-bar-choc-peanut-55g/) | 55 | 223 | 20 | 6.4 
- [High5 Energy Bar](http://highfive.co.uk/product/energy/energybar) | 60 | 194 | 3 | 2 
+ [SiS Rego](https://www.scienceinsport.com/sis-products/sis-rego-range/sis-rego-protein/sis-rego-protein-bar-choc-peanut-55g/) | 55 | 223 | 20 | 6.4 
+ [High5 Energy Bar](https://highfive.co.uk/product/energy/energybar) | 60 | 194 | 3 | 2 
 
 Mine do not do too badly. Not that both those commercial options have more everything, but they are also much bigger. Two of my bars would beat both of them hands down in all 3 of those measures. It should also be noted that all the fat in these come from the oil and the oats, which is "healthy fat" according to High 5.
 
-Like I said, I am an engineer, not a nutritionist. Do not take this as nutritional advise, rather as me sharing something I find works for me. Feel free to use this, but please share your modifications. In fact you are legally obliged to because it is under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) :-).
+Like I said, I am an engineer, not a nutritionist. Do not take this as nutritional advise, rather as me sharing something I find works for me. Feel free to use this, but please share your modifications. In fact you are legally obliged to because it is under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) :-).

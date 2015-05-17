@@ -1,11 +1,7 @@
----
-layout: post
 title: "The move to Jekyll"
 date: 2012-06-23 21:10
 comments: true
 published: false
-categories: general
----
 {% img center /images/agent-smith.jpg %}
 "That Mr Anderson is the sound of inevitability"
 <!--more -->

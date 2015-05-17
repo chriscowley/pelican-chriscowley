@@ -1,11 +1,7 @@
----
-layout: post
 title: "Writeable TFTP Server On CentOS"
 date: 2013-03-25 15:45
 comments: true
-categories:  linux
----
-Well this caught me out for an embarassingly long time. There are [loads](http://blog.penumbra.be/tag/tftp/) [of](http://www.question-defense.com/2008/11/13/linux-setup-tftp-server-on-centos) [examples](http://wiki.centos.org/EdHeron/PXESetup) of setting up a TFTP server on the web. The vast majority of them assume that you are using them read-only for PXE booting.
+Well this caught me out for an embarassingly long time. There are [loads](https://blog.penumbra.be/tag/tftp/) [of](https://www.question-defense.com/2008/11/13/linux-setup-tftp-server-on-centos) [examples](https://wiki.centos.org/EdHeron/PXESetup) of setting up a TFTP server on the web. The vast majority of them assume that you are using them read-only for PXE booting.
 
 <!-- more -->
 
@@ -66,4 +62,4 @@ Your test file should now be in `var/lib/tftpboot`.
 
 One final note with regards to VMware. This does not work if you are using the VMXNET3 adapter, so make sure you are using the E1000. GETs will work and the file will be created, but no data will be put on the server. To annoy you even more, the test PUTting to localhost will work, but PUTs from a remote host will not.
 
-It has been noted in the VMware forums [here](http://communities.vmware.com/thread/215456)
+It has been noted in the VMware forums [here](https://communities.vmware.com/thread/215456)
