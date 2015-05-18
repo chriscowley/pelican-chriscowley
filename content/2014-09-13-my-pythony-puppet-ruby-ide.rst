@@ -1,20 +1,12 @@
-My Pythony Puppet Ruby vim IDE 
+My Pythony Puppet Ruby vim IDE
 ##############################
+:tags: devops
 
-:date: 2014-09-13
-:comments: true
-:slug: my-pythony-puppet-ruby-ide
-:tags: devops, vim, python, puppet
-:summary: Using Vi for Python and Puppet development
-
-.. figure:: {filename}/images/0k24Ambl.png
-    :align: right
-    :width: 400px
-
-Despite my penchant for tools written in Ruby (Puppet, Gitlab, Jekyll/Octopress
+{% img right https://i.imgur.com/0k24Ambl.png 400 400 %}Despite my
+penchant for tools written in Ruby (Puppet, Gitlab, Jekyll/Octopress
 etc) I do not actually like Ruby. I am more of a Python guy. I also like
 Vim, so whenever I use a GUI IDE I end up with something littered with
-``:w`` and ``ZZ``. (
+``:w`` and ``ZZ``.
 
 Despite my pythonic leanings, I also need something that can handle Ruby
 and Puppet's DSL. To which end, this is a bit of a mixture. Fortunately,

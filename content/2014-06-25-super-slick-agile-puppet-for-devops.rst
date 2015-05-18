@@ -1,21 +1,19 @@
 Super Slick Agile Puppet for Devops
 ###################################
+:tags:  
 
-:date: 2014-06-25 21:22 
-:category: puppet :tags: devops, puppet
-:slug: super-slick-agile-puppet-for-devops
-
-.. figure:: {filename}/images/3SJXbMb.jpg 
-    :align: right
-    :width: 300px
-
-With a superb buzzword laden title like that, then I reckon massive
-traffic boost is inevitable.
+{% img right https://i.imgur.com/3SJXbMb.jpg %}With a superb buzzword
+laden title like that, then I reckon massive traffic boost is
+inevitable.
 
 Puppet is my favourite Configuration Management tool. This is not a post
 to try and persuade anyone not to use Ansible, Chef or any other. What I
 want to do is show I build Puppet based infrastuctures in such away that
 it meets all the basic tenets of DevOps/Agile/buzzword-of-the-month.
+
+.. raw:: html
+
+   <!-- more -->
 
 What to we need:
 
@@ -59,25 +57,25 @@ The configuration will look like:
 ::
 
     [main]
-    logdir = /var/log/puppet
-    rundir = /var/run/puppet
-    ssldir = $vardir/ssl
-    trusted_node_data = true
-    pluginsync = true
+        logdir = /var/log/puppet
+        rundir = /var/run/puppet
+        ssldir = $vardir/ssl
+        trusted_node_data = true
+        pluginsync = true
         
     [agent]
-    classfile = $vardir/classes.txt
-    localconfig = $vardir/localconfig
-    report = true
-    environment = production
-    ca_server = puppet.chriscowley.lan
-    server = puppet.chriscowley.lan
+        classfile = $vardir/classes.txt
+        localconfig = $vardir/localconfig
+        report = true
+        environment = production
+        ca_server = puppet.chriscowley.lan
+        server = puppet.chriscowley.lan
         
     [master]
-    environmentpath = $confdir/environments
-    # Passenger
-    ssl_client_header        = SSL_CLIENT_S_DN
-    ssl_client_verify_header = SSL_CLIENT_VERIFY
+        environmentpath = $confdir/environments
+        # Passenger
+        ssl_client_header        = SSL_CLIENT_S_DN
+        ssl_client_verify_header = SSL_CLIENT_VERIFY
 
 Do not use the Puppetmaster service. It uses Webrick, which is bad. Any
 more than 5 agents and it will start slowing down. Puppet is a RoR app,
@@ -129,6 +127,7 @@ mine looks like this:
 
 ::
 
+    ---
     :backends:
       - yaml
     :hierarchy:
@@ -319,6 +318,7 @@ that end create ``hieradata/common.yaml`` with this:
 
 ::
 
+    ---
     classes:
       - ntp
 
@@ -332,6 +332,7 @@ Next create ``hieradata/nodes/$(hostname -s).yaml`` with:
 
 ::
 
+    ---
     classes:
       - puppetdb
       - puppetdb::master::config

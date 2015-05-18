@@ -1,0 +1,21 @@
+My new job
+##########
+:tags:  france
+
+I have now got new challenges and am designing much bigger systems.
+Whereas before I would have take one of these: {% img center
+/images/p2000-g3-sff.png 250 400 %} Plugged it into a pair of these: {%
+img center /images/silkworm.jpg 250 450 %} And finally plugged in a pair
+of these: {% img center /images/dl380g7.jpg 200 400 %}
+
+Now I do not actually do the plugging in - that is not part of the
+documented process. Also, the system I am designing is on the other side
+of the world. However I now take one of these, a couple of these and add
+a couple of racks of these. Finally it all plugs into a couple of these.
+
+True I am not as hand-ons as I would like to be (for now). However, I am
+getting exposed to a the real big boys kit with systems that are used by
+100k+ users, as opposed to 100 users. The challenge is very real, but
+exciting. As we quite often said at Snell:
+
+"Challenge accepted..."
