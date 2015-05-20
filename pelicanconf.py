@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Chris Cowley'
-SITENAME = u'Just Another Linux Blog'
-SITEURL = ''
+SITENAME = u'Yet Another Linux Blog'
+SITEURL = 'chriscowley.me.uk'
 AUTHOR_EMAIL = "chris@chriscowley.me.uk"
 
 TIMEZONE = 'Europe/Paris'
@@ -48,5 +48,5 @@ STATIC_PATHS = [ 'images', 'assets' ]
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
-DISQUS_SITENAME = "justanotherlinuxblog"
+DISQUS_SITENAME = "yetanotherlinuxblog"
 GOOGLE_ANALYTICS = "UA-32843690-1"
