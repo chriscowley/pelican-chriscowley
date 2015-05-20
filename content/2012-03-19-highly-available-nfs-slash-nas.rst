@@ -16,8 +16,10 @@ used for DRBD sync purposes. We’ll give these the address 10.0.0.1/32
 and 10.0.0.2/32.
 
 I am also assuming that you have disabled the firewall and SELinux – I
-do not recommend that for production, but for testing it is fine. ##
+do not recommend that for production, but for testing it is fine.
+
 DRBD Configuration
+------------------
 
 Install DRBD 8.4 on the both:
 
@@ -163,7 +165,7 @@ Make sure that */etc/ha.d/ha.cf* contains:
 
 The values in node should be whatever ``uname -n`` returns.
 
-Now create */etc/ha.d/haresources*:
+Now create ``/etc/ha.d/haresources``:
 
 ::
 
@@ -227,7 +229,7 @@ Running ``ifconfig`` on nfs1 should give you something like:
               collisions:0 txqueuelen:0
               RX bytes:224 (224.0 b)  TX bytes:224 (224.0 b)
 
-Note an entry for *eth0:0* has miraculously appeared.
+Note an entry for ``eth0:0`` has miraculously appeared.
 
 Also ``df`` should include the entry:
 

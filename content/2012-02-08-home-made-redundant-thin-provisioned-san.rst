@@ -144,7 +144,7 @@ node.
     auth 2
     2 crc
 
-/etc/ha.d/ha.cf
+/etc/ha.d/ha.cf:
 
 ::
 
