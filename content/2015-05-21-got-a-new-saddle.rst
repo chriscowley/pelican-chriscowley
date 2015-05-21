@@ -5,6 +5,7 @@ Got a New Saddle
 
 .. figure:: {filename}/images/82H3FWFl.jpg
     :align: right
+    :alt: selle italia q-bik flow
     
 I recently got myself a new saddle. The one that came with my Felt F95 was starting to rattle on its rails which was driving me, and my riding buddies, insane. We are all engineers, so OCD is a shared problem we have.
 
