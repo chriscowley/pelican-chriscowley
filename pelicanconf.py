@@ -4,7 +4,11 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Chris Cowley'
 SITENAME = u'Yet Another Linux Blog'
+<<<<<<< HEAD
 SITEURL = 'chriscowley.me.uk'
+=======
+SITEURL = 'https://chriscowley.me.uk'
+>>>>>>> gitlab/master
 AUTHOR_EMAIL = "chris@chriscowley.me.uk"
 
 TIMEZONE = 'Europe/Paris'
@@ -17,7 +21,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
 
 TRANSLATION_FEED_ATOM = None
-THEME = "/home/chris/Development/pelican-themes/pelican-bootstrap3"
+THEME = "../pelican-themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = "yeti"
 PLUGIN_PATHS = ["../pelican-plugins"]
 PLUGINS = [ 'summary', 'gravatar', 'liquid_tags.img', 'liquid_tags.video',
