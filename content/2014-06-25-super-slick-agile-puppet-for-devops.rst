@@ -1,10 +1,13 @@
 Super Slick Agile Puppet for Devops
 ###################################
-:tags:  
+:tags: devops 
 
-{% img right https://i.imgur.com/3SJXbMb.jpg %}With a superb buzzword
-laden title like that, then I reckon massive traffic boost is
-inevitable.
+.. figure:: https://i.imgur.com/3SJXbMb.jpg
+    :align: right
+    :alt: Automate all the things
+
+With a superb buzzword laden title like that, then I reckon massive 
+traffic boost is inevitable.
 
 Puppet is my favourite Configuration Management tool. This is not a post
 to try and persuade anyone not to use Ansible, Chef or any other. What I

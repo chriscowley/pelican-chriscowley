@@ -2,13 +2,17 @@ Logstash on CentOS 6
 ####################
 :tags:  monitoring
 
-{% img right https://logstash.net/images/logstash.png 200 %} It's been a
-while since I last posted anything, but it is time to. I've been playing
-around a lot with various tools for gathering information about my
-environment recently. One of the most important tools for storing that
-information is decent logging. Syslog is proven and solid, but a little
-creaky. For storing everything it is fine, but getting anything out is
-not so great.
+.. figure:: http://logstash.net/images/logstash.png
+    :align: right
+    :width: 200
+    :alt: log
+
+It's been a while since I last posted anything, but it is time to. 
+I've been playing around a lot with various tools for gathering
+information about my environment recently. One of the most important tools
+for storing that information is decent logging. Syslog is proven and solid,
+but a little creaky. For storing everything it is fine, but getting anything
+out is not so great.
 
 Logstash is an awesome tool written by `Jordan
 Sissel <https://twitter.com/jordansissel>`__ that is used to "collect

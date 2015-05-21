@@ -66,9 +66,11 @@ component will be Openstack, but not necessarily everywhere.
 Hardware
 ========
 
-{% img right
-https://www.supermicro.com.tw/a\_images/products/superserver/2U/SYS-2027PR-HTR\_25.jpg
-%}The easy bit is the CPU and RAM: plenty (at least 6 cores with 64GB of
+.. figure:: https://www.supermicro.com.tw/a_images/products/superserver/2U/SYS-2027PR-HTR_25.jpg
+    :align: right
+    :alt: Supermicro Twin2
+
+The easy bit is the CPU and RAM: plenty (at least 6 cores with 64GB of
 RAM). Networking, surprisingly is also relatively simple. Anything will
 do (2x 1Gb will be fine an entry level node), but 2x 10Gb is preferable,
 Infiniband would also be great (Linux works beautifully with

@@ -2,8 +2,11 @@ VMware CLI on Ubuntu Saucy Salamander
 #####################################
 :tags: linux
 
-{% img right https://www.datanalyzers.com/VMware-Data-Recovery.jpg %}The
-current project (as of this week) has me moving away from Openstack for
+.. figure:: https://www.datanalyzers.com/VMware-Data-Recovery.jpg
+    :align: right
+    :alt: VMware Data Recovery
+
+The current project (as of this week) has me moving away from Openstack for
 a while. For the next couple of months I will be immersing myself in
 monitor, metrics and logging. Naturally, this being a shiney new
 environment, this involves a significant amount of VMware time.

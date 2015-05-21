@@ -2,25 +2,24 @@ Openstack Neutron Performance problems
 ######################################
 :tags: linux
 
-{% img right https://i.imgur.com/fSMzOUE.jpg %}For the last few weeks I
-have been consulting on a private cloud project for a local company.
-Unsurprisingly this has been based around the typical Openstack setup.
+.. figure:: https://i.imgur.com/fSMzOUE.jpg
+    :align: right
+    :alt: openstack logo
+
+For the last few weeks I have been consulting on a private cloud 
+project for a local company. Unsurprisingly this has been based
+around the typical Openstack setup.
 
 -  Nova - KVM
 -  Neutron - Openvswitch
 -  Cinder - LVM
 -  Glance - local files
 
-.. raw:: html
-
-   <!-- more -->
-
 My architecture is nothing out of the ordinary. A pair of hosts each
 with 2 networks that look something like this:
 
-{% img
-https://docs.google.com/drawings/d/11le0qu389WptC78\_08Bh92qUCLiCBXiZOhDiESSCnxo/pub?w=960&h=720
-%}
+.. figure:: https://docs.google.com/drawings/d/11le0qu389WptC78_08Bh92qUCLiCBXiZOhDiESSCnxo/pub?w=960&h=720
+    :alt: neutron architecture
 
 All this is configured using Red Hat RDO. I had done all this under both
 Grizzly and, using RDO, it was 30 minutes to set up.
@@ -49,10 +48,10 @@ However it turned out I was wrong.
 A brief Serverfault/Twitter with @martenhauville brought up a few
 suggestions, one of which caught my eye:
 
-{% blockquote @martenhauville
-https://ask.openstack.org/en/question/25947/openstack-neutron-stability-problems-with-openvswitch/
-%} there are known Neutron configuration challenges to overcome with GRE
-and MTU settings {% endblockquote %}
+
+    https://ask.openstack.org/en/question/25947/openstack-neutron-stability-problems-with-openvswitch/
+    there are known Neutron configuration challenges to overcome with GRE
+    and MTU settings
 
 This is where my problem lay: the external switch had an MTU of 1500,
 Openvswitch also. Finally, ``ip link`` in a VM would give you

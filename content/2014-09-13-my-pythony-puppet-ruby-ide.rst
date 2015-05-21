@@ -2,8 +2,12 @@ My Pythony Puppet Ruby vim IDE
 ##############################
 :tags: devops
 
-{% img right https://i.imgur.com/0k24Ambl.png 400 400 %}Despite my
-penchant for tools written in Ruby (Puppet, Gitlab, Jekyll/Octopress
+.. figure:: https://i.imgur.com/0k24Ambl.png
+    :align: right
+    :width: 400
+    :alt: vi screenshit
+
+Despite my penchant for tools written in Ruby (Puppet, Gitlab, Jekyll/Octopress
 etc) I do not actually like Ruby. I am more of a Python guy. I also like
 Vim, so whenever I use a GUI IDE I end up with something littered with
 ``:w`` and ``ZZ``.
@@ -18,7 +22,8 @@ isolate the environments of the various projects.
 
 ::
 
-    sudo apt install git python python-dev python-virtualenv virtualenvwrapper curl libxml2-dev libxslt-dev zlib1g-dev ruby-dev
+    sudo apt install git python python-dev python-virtualenv \
+        virtualenvwrapper curl libxml2-dev libxslt-dev zlib1g-dev ruby-dev
     echo "pip install pyflakes" >> ~/.virtualenvs/postmkvirtualenv
     curl -sSL https://get.rvm.io | bash -s stable --ruby
 

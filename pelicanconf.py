@@ -4,11 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Chris Cowley'
 SITENAME = u'Yet Another Linux Blog'
-<<<<<<< HEAD
-SITEURL = 'chriscowley.me.uk'
-=======
 SITEURL = 'https://chriscowley.me.uk'
->>>>>>> gitlab/master
 AUTHOR_EMAIL = "chris@chriscowley.me.uk"
 
 TIMEZONE = 'Europe/Paris'

@@ -2,9 +2,13 @@ RHEL and CentOS joining forces
 ##############################
 :tags:  linux
 
-{% img right https://i.imgur.com/3colCNj.png 200 200 %}Yesterday saw
-probably the biggest FLOSS news in recent times. Certainly the biggest
-news of 2014 so far :-) By some freak of overloaded RSS readers, I
+.. figure:: https://i.imgur.com/3colCNj.png
+    :align: right
+    :alt: centos-rhel
+    :width: 200
+
+Yesterday saw probably the biggest FLOSS news in recent times. Certainly the
+biggest news of 2014 so far :-) By some freak of overloaded RSS readers, I
 missed the announcement, but I did see this:
 
 .. raw:: html
@@ -50,14 +54,14 @@ the potential problems go away.
 The RHEL Ecosystem
 ==================
 
-{% pullquote %} In the beginning there is
+In the beginning there is
 `Fedora <https://fedoraproject.org>`__), where the RHEL developers get
-to play. Here is where they can try new things and make mistakes. {"In
-Fedora things can break without people really worrying"} (especially in
+to play. Here is where they can try new things and make mistakes. In
+Fedora things can break without people really worrying (especially in
 Rawhide). The exception to this is my wife as we run it on the family PC
 and she gets quite frustrated with its foibles. However, she knew she
 was marrying a geek from the outset, so I will not accept any blame for
-this. {% endpullquote %}}
+this.
 
 Periodically, the the Fedora developers will pull everything together
 and create a release that has the potential to be transformed into RHEL.

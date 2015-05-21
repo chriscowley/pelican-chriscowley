@@ -2,9 +2,12 @@ NFS with Puppet and an ENC
 ##########################
 :tags: devops
 
-{% img right
-https://puppetlabs.com/sites/default/files/PL\_logo\_horizontal\_RGB\_0.svg
-200 200 %}Ages ago (it seems) I posted a
+.. figure:: https://puppetlabs.com/sites/default/files/PL_logo_horizontal_RGB_0.svg
+    :align: right
+    :width: 200
+    :alt: puppet
+
+Ages ago (it seems) I posted a
 `howto <https://www.chriscowley.me.uk/blog/2013/04/11/using-hiera-with-puppet/>`__
 on configure NFS using Puppet and Hiera. I have been using this happily
 for several months and adding a new share was is as simple as adding a
@@ -20,13 +23,13 @@ OK, first I we need to get the module into a position where it uses
 parameterized classes. This is actually quite simple.
 
 My original manifest is
-`here <https://gitlab.chriscowley.me.uk/puppet/chriscowley-nfs/blob/b5d5fe6eba75379fad37255ceddb55208cbe7208/manifests/server.pp>`__.
+`here <https://github.com/chriscowley/chriscowley-nfs/blob/b5d5fe6eba75379fad37255ceddb55208cbe7208/manifests/server.pp>`__.
 The key item is the *$exports* variable, which is hiera data. All I did
 was create a class parameter called *exports* and removed the variable
 within the class. You can see the new code
-`here <https://gitlab.chriscowley.me.uk/puppet/chriscowley-nfs/blob/ab9627cf920f3a87986aa7379168572ca3a55f7e/manifests/server.pp>`__.
+`here <https://github.com/chriscowley/chriscowley-nfs/blob/ab9627cf920f3a87986aa7379168572ca3a55f7e/manifests/server.pp>`__.
 I have also moved the ``list_exports`` function out into a `seperate
-file <https://gitlab.chriscowley.me.uk/puppet/chriscowley-nfs/blob/ab9627cf920f3a87986aa7379168572ca3a55f7e/manifests/list_exports.pp>`__.
+file <https://github.com/chriscowley/chriscowley-nfs/blob/ab9627cf920f3a87986aa7379168572ca3a55f7e/manifests/list_exports.pp>`__.
 Apparently this makes it more readable, although I am not convinced in
 this instance.
 
