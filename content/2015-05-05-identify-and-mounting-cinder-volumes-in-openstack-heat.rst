@@ -11,12 +11,7 @@ instances deployed via heat that have multiple Cinder volumes attached
 to them, these then need to be mounted in a certain way. The syntax for
 attaching a cinder volume to an instance is:
 
-.. raw:: html
-
-   <!-- more -->
-
 ::
-
 
     instance_vol_att:
         type: OS::Cinder::VolumeAttachment
