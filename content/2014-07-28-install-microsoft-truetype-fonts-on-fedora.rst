@@ -4,6 +4,7 @@ Install Microsoft TrueType fonts on Fedora
 
 .. figure:: https://i.imgur.com/IVNu1pf.png
     :align: right
+    :alt: the quick brown fox
 
 Fedora do not bundle Microsoft's core Truetype fonts for licensing reasons.
 Normallly I do not care, personally I prefer `Liberation
