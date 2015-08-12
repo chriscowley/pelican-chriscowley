@@ -22,7 +22,7 @@ BOOTSTRAP_THEME = "yeti"
 PLUGIN_PATHS = ["../pelican-plugins"]
 PLUGINS = [ 'summary', 'gravatar', 'liquid_tags.img', 'liquid_tags.video',
             'pelican_gist', 'liquid_tags.img', 'clean_summary',
-            'bootstrapify'
+            'bootstrapify', 'pelican_vidme',
  #           'better_figures_and_images'
           ]
 #            'liquid_tags.youtube', 'liquid_tags.vimeo',
