@@ -10,9 +10,9 @@ for ((i=0;i<n; i++)) {
 }
 printf "\n\n"
 echo ":slug: ${SLUG}"
-echo ":date: ${DATE}"
 echo ":category:"
 echo ":tags:"
 echo ":summary:"
+echo ":status: draft"
 echo ":authors:"
 echo 
