@@ -2,10 +2,7 @@ How I Classify Puppet Nodes
 ###########################
 
 :slug: how-i-classify-puppet-nodes
-:date: 2015-08-18
 :tags: devops
-:summary: 
-:status: draft
 
 The basics of defining what modules get applied to a particular node is really simple in Puppet. Out of the box you just use the hostname and the FQDN and everyone is happy. You find this everywhere in documentation, blog posts, presentations, etc. However is has a problem: scale.
 
