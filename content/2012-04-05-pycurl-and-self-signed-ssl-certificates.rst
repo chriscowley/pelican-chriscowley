@@ -22,6 +22,7 @@ After an hour of Google-Fu and DuckDuckGo-Fu I finally managed to do
 what I wanted:
 
 ::
+
     #!/usr/bin/env python
     downloadedFile = "/tmp/stuff"
     outfile = file(downloadedFile, 'wb')
